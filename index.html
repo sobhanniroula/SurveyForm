@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Survey Form!! </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+</head>
+
+<body>
+    <main>
+        <div id="header">
+            <h1 id="title"> Community Health Survey Form </h1>
+
+        </div>
+
+        <div id="main-body">
+            <div id="form">
+                <p id="description"> Please fill out this form!! </p>
+
+                <form id="survey-form" action="/survey-form">
+                    <div id="name-tab">
+                        <label for="name" id="name-label">Name: <input id="name" name="details" type="text" placeholder="Enter your name here" required></label>
+                        <label for="email" id="email-label">Email: <input id="email" name="details" type="email" placeholder="Enter your email here" required> </label>
+                        <label for="age" id="number-label">Age: <input id="number" name="details" type="number" min="1" max="99" placeholder="Enter your age here" required> </label>
+                    </div>
+                    <div id="dropdown">
+                        <p>Select your gender:</p>
+                        <select>
+                            <option value="Male"> Male </option>
+                            <option value="Female"> Female </option>
+                        </select>
+                    </div>
+                    <div id="radio-btn-area">
+                        Select your health type:
+                        <input type="radio" name="health" value="excellent" checked>Excellent <br>
+                        <input type="radio" name="health" value="good">Good <br>
+                        <input type="radio" name="health" value="average">Average <br>
+                        <input type="radio" name="health" value="poor">Poor
+                    </div>
+                    <div id="checkbox-area">
+                        Do you have any of the following? :
+                        <label for="commoncold"><input id="commoncold" name="commoncold" type="checkbox" value="commoncold">Common Cold</label>
+                        <label for="fever"><input id="fever" name="fever" type="checkbox" value="fever">Fever</label>
+                        <label for="headache"><input id="headache" name="headache" type="checkbox" value="headache">Headache</label>
+                        <label for="none"><input id="none" name="none" type="checkbox" value="none" checked>None of the above</label>
+                    </div>
+                    <div id="text-area">
+                        Do you have any comment?
+                        <textarea rows="3" columns="100">Enter your comments here </textarea>
+                    </div>
+                    <button><input type="submit" id="submit" name="submit"></button>
+                </form>
+
+
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
